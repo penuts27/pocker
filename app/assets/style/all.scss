@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------- my code---------- */
+#cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  flex: 7% 0 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3px;
+}
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+.card p{
+  font-size: 10px;
+  margin: 2px;
+}
+.card p:last-child{
+  transform: rotate(180deg)
+}
+.back{
+  background-image: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png');
+  background-size: cover;
+}
+.paired{
+  background-color: #dae0e3;;
+}
+.wrong{
+  animation: wrongAnimation 0.2s;
+  animation-iteration-count: 5;
+}
+@keyframes wrongAnimation{
+  100%{
+    border: 2px solid #ffd54f;
+  }
+}
+/* ------header--------- */
+.header{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 85%;
+  margin: 0 auto 20px;
+  // width: 100%;
+  // align-items: fle;
+  // justify-content: flex-end;
+    &__title{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 600;
+      &__img{
+        max-width: 50px;
+        margin-right: 10px;
+      }
+      &__text{
+        // white-space: nowrap;
+      }
+    }
+    &__score{
+      color: #6c90ac;
+      margin-bottom: 5px;
+    }
+    &__tried{
+    }
+}
+/** ----Game finished---- **/
+.completed {
+  position: absolute;
+  z-index: 999;
+  top: 33vh;
+  background-color: RGBA(232, 246, 254, 0.8);
+  width: 100vw;
+  padding: 50px 0;
+}
+.completed > p {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+.completed > p:first-child {
+  font-size: 3em;
+  font-weight: 700;
+  color: #758d9a;
+}
