@@ -8,7 +8,7 @@
 ## 使用前端工具
 
 `node npm - gulp`  
-`javascript` 
+`javascript`  
 `JavaScript Standard Style`
 
 ## 程式說明
@@ -23,7 +23,7 @@
 
 `GameFinished: 'GameFinished`  
 
-搭配 MVC 架構實現程式碼模組化的管理，刻意練習`關注點分離``低耦合、可抽換`，來封裝M（資料）、 V（畫面）、 C（流程）
+搭配 MVC 架構實現程式碼模組化的管理，刻意練習`關注點分離` `低耦合、可抽換`，來封裝M（資料）、 V（畫面）、 C（流程）
 
 ## 遊戲規則
 
