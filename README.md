@@ -7,13 +7,14 @@
 
 ## 使用前端工具
 
-`node npm - gulp`  `  
+`node npm - gulp`  
 `javascript` 
 `JavaScript Standard Style`
 
 ## 程式說明
 
 定義狀態 (state)讓Controller統一管理  
+
 `FirstCardAwaits`  
 
 `SecondCardAwaits`  
